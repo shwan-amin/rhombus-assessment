@@ -1,0 +1,42 @@
+order_id,customer_name,email,phone,state,order_date,amount_usd,quantity,status
+1001,alice smith,  ALICE.SMITH@EXAMPLE.COM ,0412 345 678,NSW,15/01/2026,49.99,2,SHIPPED 
+1002,Bob Jones,bob.jones@example.com,+61423456789,Victoria,22/01/2026,120.00,1,delivered
+1003,Carla Nguyen,carla.nguyen@example.com,0434-567-890,QLD,03/02/2026,15.50,4,pending
+1001,alice smith,  ALICE.SMITH@EXAMPLE.COM ,0412 345 678,NSW,15/01/2026,49.99,2,SHIPPED 
+1004,DAVID LEE,david.lee@example.com,0445678901,wa,14/02/2026,310.25,1,SHIPPED 
+1005,Emma Brown,  EMMA.BROWN@EXAMPLE.COM ,0456 789 012,SA,28/02/2026,75.00,3,cancelled
+1006,Farid Khan,farid.khan@example.com,+61467890123, New South Wales,05/03/2026,8.95,6,delivered
+1007,grace kim,grace.kim@example.com,0478-901-234,TAS,19/03/2026,499.00,1,SHIPPED 
+1005,Emma Brown,  EMMA.BROWN@EXAMPLE.COM ,0456 789 012,SA,28/02/2026,75.00,3,cancelled
+1008,Hugo Martin,hugo.martin@example.com,0489012345,act,25/03/2026,62.40,2,pending
+1009,Isla Wilson,  ISLA.WILSON@EXAMPLE.COM ,0490 123 456,NT,02/04/2026,230.10,1,delivered
+1010,JACK TAYLOR,jack.taylor@example.com,+61401234567,VIC,17/04/2026,19.99,5,SHIPPED 
+1009,Isla Wilson  ,ISLA.WILSON@EXAMPLE.COM,0490 123 456,NT,02/04/2026,230.10,1,delivered
+1011,Kira Patel,kira.patel@example.com,0411-223-344,QLD,30/04/2026,88.80,2,delivered
+1012,Liam Chen,liam.chen@example.com,0422334455, New South Wales,06/05/2026,145.00,1,pending
+1013,mia rossi,  MIA.ROSSI@EXAMPLE.COM ,0433 445 566,WA,21/05/2026,33.33,3,SHIPPED 
+1014,Noah Evans,noah.evans@example.com,+61444556677,South Australia,09/06/2026,275.50,1,cancelled
+1015,Olivia Park,olivia.park@example.com,0455-667-788, New South Wales,13/06/2026,12.00,8,delivered
+1016,PEDRO ALVES,pedro.alves@example.com,0466778899,VIC,27/06/2026,410.75,1,SHIPPED 
+1017,Quinn Adams,  QUINN.ADAMS@EXAMPLE.COM ,0477 889 900,QLD,04/07/2026,54.20,2,pending
+1018,Ruby Walsh,ruby.walsh@example.com,+61488990011,Tasmania,16/07/2026,99.99,1,delivered
+1019,sam wright,sam.wright@example.com,0499-001-122,NSW,29/07/2026,187.60,2,SHIPPED 
+1020,Tara Singh,tara.singh@example.com,0400112233,act,08/08/2026,24.50,4,delivered
+1021,Umar Ali,  UMAR.ALI@EXAMPLE.COM ,0410 203 040,vic ,19/08/2026,360.00,1,pending
+1022,VERA NOVAK,vera.novak@example.com,+61420304050,wa,23/08/2026,45.45,3,SHIPPED 
+1023,Will Hart,will.hart@example.com,0430-405-060,nsw,01/09/2026,150.00,2,delivered
+1024,Xin Zhao,xin.zhao@example.com,0440506070,South Australia,14/09/2026,5.00,10,cancelled
+1025,yara haddad,  YARA.HADDAD@EXAMPLE.COM ,0450 607 080,QLD,18/09/2026,220.20,1,SHIPPED 
+1026,Zoe Clarke,zoe.clarke@example.com,+61460708090,nsw,26/09/2026,67.89,2,delivered
+1027,Aaron Bell,,0411000111,NSW,27/09/2026,40.00,1,pending
+1028,Bella Ford,bella.ford@example,0411000222,VIC,27/09/2026,55.00,2,shipped
+1029,Cody Grant,cody.grant@example.com,0411000333,QLD,28/09/2026,,1,pending
+1030,Dana Hill,dana.hill@example.com,0411000444,WA,28/09/2026,-25.00,1,delivered
+1031,Eli Irwin,eli.irwin@example.com,0411000555,SA,28/09/2026,twelve,1,shipped
+1032,Fay Jensen,fay.jensen@example.com,0411000666,TAS,13/45/2026,30.00,1,pending
+1033,Gus King,gus.king@example.com,0411000777,ACT,29/09/2026,70.00,0,shipped
+1034,Hana Lowe,hana.lowe@example.com,0411000888,NT,29/09/2026,80.00,abc,delivered
+,Ivan Moss,ivan.moss@example.com,0411000999,NSW,29/09/2026,90.00,1,pending
+1035,June Nash,june.nash@example.com,,VIC,29/09/2026,35.00,2,shipped
+1036,Kai Owen,kai.owen@example.com,0412999888,,29/09/2026,65.00,1,pending
+1037,Lena Price,lena.price@example.com,0412999777,QLD,29/09/2026,42.00,2,unknown

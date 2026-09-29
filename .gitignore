@@ -1,0 +1,31 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+
+# Cloud credentials (never commit)
+*service-account*.json
+*-key.json
+gcp*.json
+*credentials*.csv
+*accessKeys*.csv
+
+# Node / Playwright
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+playwright/.auth/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Validation reports (keep folder)
+data-validation/results/*
+!data-validation/results/.gitkeep
+
+# OS
+.DS_Store
