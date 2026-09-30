@@ -2,7 +2,7 @@
 
 ## Change made
 
-A new `discount_code` column was added. Dataset: [`datasets/schema-add-column.csv`](../datasets/schema-add-column.csv) (TODO: confirm filename)
+A new `discount_code` column was added. Dataset: [`datasets/schema_add_column.csv`](../datasets/schema_add_column.csv)
 
 ## Expected behaviour
 

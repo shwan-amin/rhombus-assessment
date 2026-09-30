@@ -1,0 +1,4 @@
+id,name,email,signup_date,amount
+1,Alice Smith,alice@example.com,2026-01-15,49.99
+2,Bob Jones,bob@example.com,2026-02-20,120.0
+3,Carla Nguyen,carla@example.com,2026-03-05,15.5

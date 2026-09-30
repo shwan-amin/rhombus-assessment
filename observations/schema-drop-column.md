@@ -2,7 +2,7 @@
 
 ## Change made
 
-The `phone` column was removed. Dataset: [`datasets/schema-drop-column.csv`](../datasets/schema-drop-column.csv) (TODO: confirm filename)
+The `phone` column was removed. Dataset: [`datasets/schema_drop_column.csv`](../datasets/schema_drop_column.csv)
 
 ## Expected behaviour
 

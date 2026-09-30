@@ -2,7 +2,7 @@
 
 ## Change made
 
-All four schema changes at once: `phone` removed, `email` → `email_address`, `order_id` integer → string `ORD-1001`, new `discount_code` column. Dataset: [`datasets/schema-combined.csv`](../datasets/schema-combined.csv) (TODO: confirm filename)
+All four schema changes at once: `phone` removed, `email` → `email_address`, `order_id` integer → string `ORD-1001`, new `discount_code` column. Dataset: [`datasets/schema_combined.csv`](../datasets/schema_combined.csv)
 
 ## Expected behaviour
 

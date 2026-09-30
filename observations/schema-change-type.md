@@ -2,7 +2,7 @@
 
 ## Change made
 
-`order_id` changed from an integer to a string (e.g. `1001` → `ORD-1001`). Dataset: [`datasets/schema-change-type.csv`](../datasets/schema-change-type.csv) (TODO: confirm filename)
+`order_id` changed from an integer to a string (e.g. `1001` → `ORD-1001`). Dataset: [`datasets/schema_change_type.csv`](../datasets/schema_change_type.csv)
 
 ## Expected behaviour
 

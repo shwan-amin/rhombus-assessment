@@ -2,7 +2,7 @@
 
 ## Change made
 
-`amount_usd` values multiplied by 100 (dollars written as cents); column name and type unchanged. Dataset: [`datasets/semantic-dollars-to-cents.csv`](../datasets/semantic-dollars-to-cents.csv) (TODO: confirm filename)
+`amount_usd` values multiplied by 100 (dollars written as cents); column name and type unchanged. Dataset: [`datasets/semantic_dollars_to_cents.csv`](../datasets/semantic_dollars_to_cents.csv)
 
 ## Expected behaviour
 

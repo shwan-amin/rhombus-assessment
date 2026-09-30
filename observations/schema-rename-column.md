@@ -2,7 +2,7 @@
 
 ## Change made
 
-The `email` column was renamed to `email_address`. Dataset: [`datasets/schema-rename-column.csv`](../datasets/schema-rename-column.csv) (TODO: confirm filename)
+The `email` column was renamed to `email_address`. Dataset: [`datasets/schema_rename_column.csv`](../datasets/schema_rename_column.csv)
 
 ## Expected behaviour
 

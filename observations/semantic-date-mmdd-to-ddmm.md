@@ -2,7 +2,7 @@
 
 ## Change made
 
-`order_date` values written as DD/MM/YYYY instead of MM/DD/YYYY. Dataset: [`datasets/semantic-date-mmdd-to-ddmm.csv`](../datasets/semantic-date-mmdd-to-ddmm.csv) (TODO: confirm filename)
+`order_date` values written as DD/MM/YYYY instead of MM/DD/YYYY. Dataset: [`datasets/semantic_date_mmdd_to_ddmm.csv`](../datasets/semantic_date_mmdd_to_ddmm.csv)
 
 ## Expected behaviour
 

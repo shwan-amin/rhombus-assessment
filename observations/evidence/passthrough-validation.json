@@ -1,0 +1,299 @@
+{
+  "scenario": "passthrough-identity",
+  "timestamp": "20260930T102128Z",
+  "input": {
+    "location": "/Users/shwan/Projects/rhombus-assessment/datasets/baseline_orders.csv",
+    "rows": 41,
+    "columns": [
+      "order_id",
+      "customer_name",
+      "email",
+      "phone",
+      "state",
+      "order_date",
+      "amount_usd",
+      "quantity",
+      "status"
+    ]
+  },
+  "output": {
+    "location": "/Users/shwan/Projects/rhombus-assessment/observations/evidence/runs/passthrough-output.csv",
+    "rows": 41,
+    "columns": [
+      "order_id",
+      "customer_name",
+      "email",
+      "phone",
+      "state",
+      "order_date",
+      "amount_usd",
+      "quantity",
+      "status"
+    ],
+    "sha256": "185c6996183926b062fac3fe37973f8fd210d0f866a4fb83d2a8c3956c42c133"
+  },
+  "compare_with": null,
+  "baseline": "datasets/baseline_orders.csv",
+  "expect_identical": true,
+  "passed": false,
+  "results": [
+    {
+      "category": "schema",
+      "check": "schema",
+      "passed": true,
+      "details": "columns and order match",
+      "violations": null,
+      "examples": []
+    },
+    {
+      "category": "row_count",
+      "check": "row count",
+      "passed": false,
+      "details": "41 rows, expected 28",
+      "violations": null,
+      "examples": []
+    },
+    {
+      "category": "cleaning",
+      "check": "R01 no surrounding whitespace",
+      "passed": false,
+      "details": "19 row(s) have untrimmed values (customer_name=1, email=9, state=4, status=10)",
+      "violations": 19,
+      "examples": [
+        "1001.0",
+        "1004.0",
+        "1005.0",
+        "1006.0",
+        "1007.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R02 customer_name Title Case",
+      "passed": false,
+      "details": "10 row(s) not Title Case",
+      "violations": 10,
+      "examples": [
+        "1001.0",
+        "1004.0",
+        "1007.0",
+        "1010.0",
+        "1013.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R03 email valid + lowercase",
+      "passed": false,
+      "details": "12 row(s) empty, not lowercase or invalid",
+      "violations": 12,
+      "examples": [
+        "1001.0",
+        "1005.0",
+        "1009.0",
+        "1013.0",
+        "1017.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R04 phone blank or 04XXXXXXXX",
+      "passed": false,
+      "details": "23 row(s) not blank and not 04XXXXXXXX",
+      "violations": 23,
+      "examples": [
+        "1001.0",
+        "1002.0",
+        "1003.0",
+        "1005.0",
+        "1006.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R05 state blank or valid code",
+      "passed": false,
+      "details": "14 row(s) not blank and not a state code",
+      "violations": 14,
+      "examples": [
+        "1002.0",
+        "1004.0",
+        "1006.0",
+        "1008.0",
+        "1012.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R06 order_date YYYY-MM-DD",
+      "passed": false,
+      "details": "1 row(s) not a real YYYY-MM-DD date (incl. empty)",
+      "violations": 1,
+      "examples": [
+        "1032.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R07 amount_usd >= 0, 2dp",
+      "passed": false,
+      "details": "3 row(s) not a non-negative number with 2 decimals",
+      "violations": 3,
+      "examples": [
+        "1029.0",
+        "1030.0",
+        "1031.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R08 quantity integer >= 1",
+      "passed": false,
+      "details": "2 row(s) not an integer >= 1",
+      "violations": 2,
+      "examples": [
+        "1033.0",
+        "1034.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R09 status valid",
+      "passed": false,
+      "details": "11 row(s) not an allowed status",
+      "violations": 11,
+      "examples": [
+        "1001.0",
+        "1004.0",
+        "1007.0",
+        "1010.0",
+        "1013.0"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R10 order_id not empty",
+      "passed": false,
+      "details": "1 row(s) have an empty order_id",
+      "violations": 1,
+      "examples": [
+        "<blank order_id, line 39>"
+      ]
+    },
+    {
+      "category": "cleaning",
+      "check": "R11 order_id unique",
+      "passed": false,
+      "details": "6 row(s) share an order_id with another row",
+      "violations": 6,
+      "examples": [
+        "1001.0",
+        "1005.0",
+        "1009.0"
+      ]
+    },
+    {
+      "category": "semantic",
+      "check": "S01 amount_usd in 5-500 range",
+      "passed": false,
+      "details": "3 row(s) not a number in 5-500",
+      "violations": 3,
+      "examples": [
+        "1029.0",
+        "1030.0",
+        "1031.0"
+      ]
+    },
+    {
+      "category": "semantic",
+      "check": "S02 order_date same day as reference",
+      "passed": true,
+      "details": "39 comparable rows match the reference dates",
+      "violations": 0,
+      "examples": []
+    },
+    {
+      "category": "platform",
+      "check": "P01 order_id stays integer",
+      "passed": false,
+      "details": "40 row(s) not an integer string - integer ids were written as floats (e.g. 1001 -> 1001.0)",
+      "violations": 40,
+      "examples": [
+        "1001.0",
+        "1002.0",
+        "1003.0",
+        "1004.0",
+        "1005.0"
+      ]
+    },
+    {
+      "category": "platform",
+      "check": "P02 no silent nulling",
+      "passed": false,
+      "details": "1 row(s) had a non-empty input value replaced by an empty one",
+      "violations": 1,
+      "examples": [
+        "1032.0.order_date: '13/45/2026' -> ''"
+      ]
+    },
+    {
+      "category": "determinism",
+      "check": "determinism (sha256)",
+      "passed": true,
+      "details": "SKIPPED: sha256=185c6996183926b062fac3fe37973f8fd210d0f866a4fb83d2a8c3956c42c133 (no --compare-with given)",
+      "violations": null,
+      "examples": []
+    },
+    {
+      "category": "identity",
+      "check": "I01 output identical to input",
+      "passed": false,
+      "details": "74 of 369 cells changed",
+      "violations": 74,
+      "examples": [
+        "1001.order_id: '1001' -> '1001.0'",
+        "1002.order_id: '1002' -> '1002.0'",
+        "1002.order_date: '01/22/2026' -> '2026-01-22'",
+        "1003.order_date: '02/03/2026' -> '2026-02-03'"
+      ],
+      "per_column": {
+        "order_id": {
+          "changed": 40,
+          "example": "'1001' -> '1001.0'"
+        },
+        "customer_name": {
+          "changed": 0,
+          "example": ""
+        },
+        "email": {
+          "changed": 0,
+          "example": ""
+        },
+        "phone": {
+          "changed": 0,
+          "example": ""
+        },
+        "state": {
+          "changed": 0,
+          "example": ""
+        },
+        "order_date": {
+          "changed": 34,
+          "example": "'01/22/2026' -> '2026-01-22'"
+        },
+        "amount_usd": {
+          "changed": 0,
+          "example": ""
+        },
+        "quantity": {
+          "changed": 0,
+          "example": ""
+        },
+        "status": {
+          "changed": 0,
+          "example": ""
+        }
+      }
+    }
+  ]
+}
